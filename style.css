@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6246ea;
+  font-family: inter;
+}
+
+header {
+  background: #2b2c34;
+  width: 100%;
+  position: relative;
+  z-index: 9999;
+  justify-content: center;
+  text-align: center;
+  align-item: center;
+}
+
+header .headText {
+  color: #fffffe;
+  font-size: 30px;
+}
+
+main {
+  background: #d1d1e9;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+.glass {
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  background: #2b2c34;
+  overflow: hidden;
+  padding: 50px;
+  border-radius: 10px;
+}
+.glass:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(20px);
+  margin: -20px;
+}
+.glass h2 {
+  color: #fffffe;
+  text-shadow: 2px 2px 5px #2b2c34;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.inputNewBook .input {
+  display: flex;
+  flex-direction: column;
+  font-family: inter;
+  margin: 10px 0;
+}
+.inputDone {
+  display: flex;
+  flex-direction: row;
+  padding: 10;
+}
+.inputDone label {
+  margin: 5px 0 0 5px;
+}
+.glass input,
+.inputDone label {
+  border: none;
+  height: 35px;
+  border-radius: 10px;
+  font-family: inter;
+  padding: 0 10px;
+}
+.inputDone label {
+  padding: 0;
+}
+.inputNewBook .input label,
+.inputDone label {
+  font-size: 14px;
+  color: #fffffe;
+  text-shadow: 2px 2px 5px #2b2c34;
+  padding-bottom: 5px;
+}
+.glass input:focus {
+  outline: none;
+}
+.inputNewBook button,
+.searchSection button {
+  width: 100%;
+  border: none;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #d1d1e9;
+  color: rgb(43, 43, 43);
+  text-shadow: 2px 2px 5px #f0f0f0;
+  cursor: pointer;
+}
+
+button:hover {
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #d1d1e9;
+  color: #2b2c34;
+  text-shadow: 2px 2px 5px #f0f0f0;
+  cursor: pointer;
+}
+.glass #addBook:hover {
+  background: #2b2c34;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 5px #ffffff;
+  color: #fffffe;
+}
+
+.searchSection,
+.bukuBelumDibaca,
+.sudahDibaca {
+  margin-top: 20px;
+}
+.searchSection input {
+  width: 80%;
+  height: 45px;
+}
+.searchSection button {
+  width: 19%;
+  box-sizing: border-box;
+}
+.listBuku .item {
+  background: #ffd803;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.listBukuUdah .item {
+  background: #00ebc7;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.listBuku .item * {
+  color: #424242;
+}
+.checkButton {
+  width: 40px;
+  height: 40px;
+
+  background: url("assetsSvg/check-outline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+  opacity: 0.5;
+}
+.checkButton:hover {
+  background: url("assetsSvg/check-solid.svg");
+  background-size: contain;
+  background: #fffffe;
+}
+
+.trashButton {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  background: url("assetsSvg/trash-outline.svg");
+  background-size: contain;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.trashButton:hover {
+  background: url("assetsSvg/trash-fill.svg");
+  background-size: contain;
+}
+
+.undoButton {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  background: url("assetsSvg/undo-ouline.svg");
+  background-size: contain;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.undoButton:hover {
+  background: url("assetsSvg/undo-ouline.svg");
+  background-size: contain;
+  opacity: 0.8;
+}
+
+.checkButton:focus,
+.trashButton {
+  outline: none;
+}
+
+button .addBook {
+  height: 55px;
+}

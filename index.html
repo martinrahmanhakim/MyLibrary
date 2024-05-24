@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martin Rahman Hakim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="headText">Martin Rahman Hakim <br />MyLibrary</h1>
+    </header>
+
+    <main>
+      <section class="inputNewBook glass">
+        <form action="" id="formInput">
+          <h2>Silakan Input Buku Anda</h2>
+          <div class="input">
+            <label for="inputJudul">Judul</label>
+            <input type="text" id="inputJudul" required />
+          </div>
+          <div class="input">
+            <label for="inputPenulis">Penulis</label>
+            <input type="text" id="inputPenulis" required />
+          </div>
+          <div class="input">
+            <label for="inputTahun">Tahun</label>
+            <input type="number" id="inputTahun" required />
+          </div>
+          <div class="inputDone">
+            <input type="checkbox" name="" id="inputSudahDibaca" />
+            <label for="inputSudahDibaca">Sudah di baca</label>
+          </div>
+          <button type="submit" id="addBook">Tambah ke Daftar Buku</button>
+        </form>
+      </section>
+      <section class="searchSection glass">
+        <form action="" id="formSearch">
+          <h2>Cari buku (Berdasarkan judul)</h2>
+          <input
+            type="text"
+            id="searchBookJudul"
+            placeholder="Cari...."
+            onkeyup=""
+          />
+          <button type="submit" id="searchButton">Cari</button>
+        </form>
+      </section>
+      <section class="bukuBelumDibaca glass">
+        <h2>Buku Yang Belum Selesai Dibaca</h2>
+
+        <div class="listBuku" id="bookShelf"></div>
+      </section>
+      <section class="sudahDibaca glass">
+        <h2>Buku Yang Selesai Dibaca</h2>
+
+        <div class="listBukuUdah" id="completedBooks"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
